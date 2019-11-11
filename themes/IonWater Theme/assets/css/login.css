@@ -1,5 +1,5 @@
 body.login {
-  background: linear-gradient(to bottom, #438534 0%, #61B94C 100%);
+  background: #fff;
 }
 
 body.login div#login h1 {
@@ -7,8 +7,8 @@ body.login div#login h1 {
 }
 
 body.login div#login h1 a {
-  background: url(../images/login/logo.svg) no-repeat center center/auto 100% transparent;
-  height: 125px;
+  background: url(../images/login/logo.png) no-repeat center center/auto 100% transparent;
+  height: 100px;
   margin: 0 auto 50px;
   outline: none;
   width: 100%;
@@ -16,15 +16,15 @@ body.login div#login h1 a {
 
 body.login div#login #loginform #user_pass,
 body.login div#login #loginform #user_login {
-  color: #61B94C;
+  color: #0085ba;
 }
 
 body.login div#login #nav a,
 body.login div#login #backtoblog a {
-  color: #fff;
+  color: black;
 }
 
 body.login div#login #nav a:hover,
 body.login div#login #backtoblog a:hover {
-  color: #316026;
+  color: #0085ba;
 }

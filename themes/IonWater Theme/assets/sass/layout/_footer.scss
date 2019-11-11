@@ -1,0 +1,16 @@
+.footer{
+  width: 100%;
+  color: white;
+  background-color: #03A9F4;
+  padding: 2em ;
+
+  &__bg{
+    display: flex;
+    padding: 2em ;
+    justify-content: center;
+    &--copy{
+      padding-left: 2em;
+      filter:drop-shadow(0px 0px 9px black);
+    }
+  }
+}
