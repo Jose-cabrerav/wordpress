@@ -35,7 +35,7 @@ function dl_enqueue_style() {
 	wp_register_style( 'fontawesome', get_theme_file_uri( '/assets/css/fontawesome.css'), null, '5.6.3', 'screen' );
 	wp_register_style( 'main_style', get_theme_file_uri( '/assets/css/style.css'), $deps, $theme_data->get( 'Version' ), 'screen' );
 	wp_register_style( 'font_style', 'https://fonts.googleapis.com/css?family=Roboto&display=swap', $deps, $theme_data->get( 'Version' ), 'screen' );
-
+	wp_register_style( 'mi_estilo', get_theme_file_uri('/assets/css/my-style.css'), $deps, $theme_data->get( 'Version' ), 'screen' );
 
 	https://fonts.googleapis.com/css?family=Roboto&display=swap
 
@@ -54,6 +54,7 @@ function dl_enqueue_style() {
 
 	wp_enqueue_style( 'main_style' );
 	wp_enqueue_style( 'font_style' );
+	wp_enqueue_style( 'mi_estilo' );
 }
 
 add_action( 'wp_enqueue_scripts', 'dl_enqueue_style' );

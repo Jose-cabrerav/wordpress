@@ -1,41 +1,5 @@
 <?php get_header() ?>
 
-<header>
-  <div class="title-dsk">
-    <a href=""><img src="assets/images/logo/logo.png" class="title-dsk__logo"></a>
-  </div>
-</header>
-<!-- Navigation -->
-  <nav>
-    <div class="nav-dsk">
-      <ul>
-        <li><a href="">Inicio</a></li>
-        <li><a>Equipos<span class="arrow-down"></span></a>
-          <ul class="dropdown">
-            <li><a href="ablandadores.html">Ablandadores</a></li>
-            <li><a href="filtros.html">Filtros</a></li>
-          </ul>
-        </li>
-        <li><a>Productos Quimicos<span class="arrow-down"></span></a>
-         <ul class="dropdown">
-           <li><a href="hogar.html">Limpieza Hogar</a></li>
-           <li><a href="piscinas.html">Piscinas</a></li>
-         </ul>
-       </li>
-        <li><a href="piscinas.html">Piscinas</a></li>
-        <li><a href="quienes-somos.html">Quienes Somos</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </div>
-    <div class="nav-mov">
-      <div class="nav-mov__bg">
-        <div class="nav-mov__bg--burger"> <span></span> <span></span> <span></span> </div>
-        <a href="#" class="nav-mov__bg--title"><img src="assets/images/logo/logo.png"  class="nav-mov__bg--logo"></a>
-      </div>
-    </div>
-  </nav>
-<div class='content'></div>
-
 <!-- Principal -->
 <section>
   <!-- Slider -->
@@ -77,7 +41,5 @@
 </section>
 
 
-
-<?php get_sidebar() ?>
 
 <?php get_footer() ?>

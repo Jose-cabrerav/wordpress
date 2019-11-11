@@ -2,9 +2,11 @@
 	<div class="container">
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<a class="navbar-brand" href="<?php bloginfo('url') ?>">Navbar</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
+
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+
 
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		<?php if ( has_nav_menu( 'header-menu' ) ) { ?>
@@ -23,3 +25,4 @@
 		</div>
 	</div>
 </nav>
+<!-- <?php bloginfo('url') ?> -->
