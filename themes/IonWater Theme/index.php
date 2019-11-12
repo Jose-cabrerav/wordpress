@@ -4,19 +4,22 @@
 <section>
   <!-- Slider -->
   <article>
-    <div id="carouselExampleIndicators" class="carousel slide sl" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="d-block h-auto w-100" src="assets/images/sl1.jpeg" alt="Food Water">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block h-auto w-100" src="assets/images/sl2.jpeg" alt="Kitchen Water">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block h-auto w-100" src="assets/images/sl3.jpeg" alt="Work Water">
-        </div>
-      </div>
-    </div>
+    <div id="carouselExampleSlidesOnly" class="carousel slide sl" data-ride="carousel">
+  <div class="carousel-inner">
+    <?php $arg = array(
+     'post_type'     => 'slider',
+     'posts_per_page' => 3);
+      $get_arg = new WP_Query( $arg );
+      while ( $get_arg->have_posts() ) {
+     $get_arg->the_post();
+     ?>
+     <div class="carousel-item <?php if ( $get_arg->current_post == 1 ) : ?>active<?php endif; ?>">
+       <?php the_post_thumbnail('carousel-images', array('class' => 'd-block w-100 h-auto')); ?></div>
+     <?php } wp_reset_postdata(); ?>
+  </div>
+</div>
+
+
   </article>
   <!-- Cards -->
   <article class="services" >

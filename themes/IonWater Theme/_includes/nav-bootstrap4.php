@@ -1,19 +1,19 @@
 <nav class="navbar navbar-expand-md navbar-light bg-light" role="navigation">
 	<div class="container">
-		<!-- Brand and toggle get grouped for better mobile display -->
-		<a class="navbar-brand" href="<?php bloginfo('url') ?>">Navbar</a>
+		<a class="navbar-brand" href="<?php bloginfo('url') ?>">Inicio</a>
 
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-		    <span class="navbar-toggler-icon"></span>
-		  </button>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+	 	</button>
 
 
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
 		<?php if ( has_nav_menu( 'header-menu' ) ) { ?>
 			<?php wp_nav_menu( array(
 				'theme_location'	=> 'header-menu',
 				'depth'				=> 2,
-				'container'			=> false,
+				'container'			=> true,
 				'menu_class'		=> 'navbar-nav mr-auto',
 				'fallback_cb'		=> 'WP_Bootstrap_Navwalker::fallback',
 				'walker'			=> new WP_Bootstrap_Navwalker(),
@@ -25,4 +25,3 @@
 		</div>
 	</div>
 </nav>
-<!-- <?php bloginfo('url') ?> -->
