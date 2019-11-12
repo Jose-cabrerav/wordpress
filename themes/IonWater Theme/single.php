@@ -10,8 +10,7 @@
       </div>
       <div class="col-sm-12 col-md-6">
         <div class="img">
-          <?php the_post_thumbnail('menu-items', array('class' => 'card-img-top
-h-auto')); ?>
+          <?php the_post_thumbnail('menu-items', array('class' => 'card-img-toph-auto')); ?>
         </div>
       </div>
     </div>
