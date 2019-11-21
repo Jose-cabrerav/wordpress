@@ -11,7 +11,9 @@ function dl_image_sizes( $sizes ) {
 
 	$add_sizes = array(
 		'carousel-images'		=> __( 'Tamaño del slideshow' ),
-		'custom_logo'	=> __( 'Tamaño personalizado del logo' )
+		'menu-items'	=> __( 'Tamaño personalizado del logo' ),
+		'blog-square'	=> __( 'Tamaño del blog' ),
+		'detail'	=> __( 'Tamaño del detalle' ),
 	);
 
 	return array_merge( $sizes, $add_sizes );
@@ -31,9 +33,9 @@ function dl_image_sizes( $sizes ) {
 if ( function_exists( 'add_theme_support' ) ) {
 
 	add_image_size( 'carousel-images', 1200, 400, true );			// Personalización del tamaño del slideshow
-	add_image_size( 'custom_logo', 800, 600, true );		// Personalización del tamaño del logo
-	add_image_size( 'prod_img', 400, 400, true );
-	add_image_size( 'cards', 800, 600, true );
+	add_image_size( 'menu-items', 640, 360, false );		// Personalización del tamaño del menu
+	add_image_size( 'blog-square', 142, 142, false );	// Personalización del tamaño del blog
+	add_image_size( 'detail', 446, 568, false );	// Personalización del tamaño del detalle
 
 
 

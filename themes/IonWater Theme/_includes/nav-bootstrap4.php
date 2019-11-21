@@ -1,20 +1,13 @@
-<nav class="navbar navbar-expand-md navbar-light bg-light" role="navigation">
+<nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
 	<div class="container">
-		<a class="navbar-brand" href="<?php bloginfo('url') ?>">Inicio</a>
 
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-	 	</button>
-
-
-
-		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+		<div class="collapse navbar-collapse" id="navbarNav">
 		<?php if ( has_nav_menu( 'header-menu' ) ) { ?>
 			<?php wp_nav_menu( array(
 				'theme_location'	=> 'header-menu',
 				'depth'				=> 2,
 				'container'			=> true,
-				'menu_class'		=> 'navbar-nav mr-auto',
+				'menu_class'		=> 'navbar-nav mc -auto',
 				'fallback_cb'		=> 'WP_Bootstrap_Navwalker::fallback',
 				'walker'			=> new WP_Bootstrap_Navwalker(),
 			) ); ?>

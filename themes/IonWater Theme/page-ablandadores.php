@@ -1,4 +1,7 @@
 <?php get_header() ?>
+<div class='content1'>
+  <h1>Ablandadores de Agua</h1>
+</div>
 <article class="cards">
   <div class="row">
     <?php $arg = array(
@@ -16,8 +19,8 @@
      ?>
      <div class="col-sm-12 col-md-4 box">
        <div class="cards1" style="width: 18rem;">
-         <div class="cards1__image" style="text-align:center;">
-           <div style="width:60%; text-align:center;">
+         <div class="cards1__image">
+           <div style="text-align:center;">
              <?php the_post_thumbnail('menu-items', array('class' => 'card-img-toph-auto')); ?>
            </div>
          </div>
@@ -31,4 +34,5 @@
      <?php } wp_reset_postdata(); ?>
   </div>
 </article>
+
 <?php get_footer() ?>

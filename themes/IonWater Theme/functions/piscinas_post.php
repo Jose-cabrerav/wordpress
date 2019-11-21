@@ -1,12 +1,12 @@
 <?php
 // Register Custom Post Type
-function ablanadores_post() {
+function piscinas_post_type() {
 
 	$labels = array(
-		'name'                  => _x( 'Ablanadores', 'Post Type General Name', 'text_domain' ),
-		'singular_name'         => _x( 'Ablanador', 'Post Type Singular Name', 'text_domain' ),
-		'menu_name'             => __( 'Shop Ablanadores', 'text_domain' ),
-		'name_admin_bar'        => __( 'Shop Ablanadores', 'text_domain' ),
+		'name'                  => _x( 'piscinas', 'Post Type General Name', 'text_domain' ),
+		'singular_name'         => _x( 'piscina', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'             => __( 'Prod. Piscinas', 'text_domain' ),
+		'name_admin_bar'        => __( 'Prod. Piscinas', 'text_domain' ),
 		'archives'              => __( 'Item Archives', 'text_domain' ),
 		'attributes'            => __( 'Item Attributes', 'text_domain' ),
 		'parent_item_colon'     => __( 'Parent Item:', 'text_domain' ),
@@ -32,10 +32,10 @@ function ablanadores_post() {
 		'filter_items_list'     => __( 'Filter items list', 'text_domain' ),
 	);
 	$args = array(
-		'label'                 => __( 'Ablanador', 'text_domain' ),
-		'description'           => __( 'Post Type for product', 'text_domain' ),
+		'label'                 => __( 'piscina', 'text_domain' ),
+		'description'           => __( 'post de piscinas', 'text_domain' ),
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'thumbnail' ),
+    'supports'              => array( 'title', 'editor', 'thumbnail' ),
 		'taxonomies'            => array( 'category', 'post_tag' ),
 		'hierarchical'          => false,
 		'public'                => true,
@@ -51,8 +51,8 @@ function ablanadores_post() {
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
 	);
-	register_post_type( 'ablanadores_post', $args );
+	register_post_type( 'piscinas_type', $args );
 
 }
-add_action( 'init', 'ablanadores_post', 0 );
+add_action( 'init', 'piscinas_post_type', 0 );
  ?>

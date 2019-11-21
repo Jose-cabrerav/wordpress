@@ -24,17 +24,17 @@
   <!-- Cards -->
   <article class="services" >
     <div class="container2">
-      <a href="hogar.html"class="card1 ef">
+      <a href="hogar"class="card1 ef">
         <div class="card1__bg">
           <h1 class="card1__bg--text">Soluciones Para el hogar</h1>
         </div>
       </a>
-      <a href="ablandadores.html" class="card2 ef">
+      <a href="ablandadores" class="card2 ef">
         <div class="card2__bg">
           <h1 class="card2__bg--text">Soluciones Industriales</h1>
         </div>
       </a>
-      <a href="piscinas.html" class="card3 ef">
+      <a href="piscinas" class="card3 ef">
         <div class="card3__bg">
           <h1 class="card3__bg--text">Soluciones para Piscinas</h1>
         </div>

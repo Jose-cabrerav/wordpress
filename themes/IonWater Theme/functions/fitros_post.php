@@ -1,13 +1,13 @@
 <?php
 // Register Custom Post Type
-function ablanadores_post() {
+function custom_post_type() {
 
 	$labels = array(
-		'name'                  => _x( 'Ablanadores', 'Post Type General Name', 'text_domain' ),
-		'singular_name'         => _x( 'Ablanador', 'Post Type Singular Name', 'text_domain' ),
-		'menu_name'             => __( 'Shop Ablanadores', 'text_domain' ),
-		'name_admin_bar'        => __( 'Shop Ablanadores', 'text_domain' ),
-		'archives'              => __( 'Item Archives', 'text_domain' ),
+		'name'                  => _x( 'Filtros', 'Post Type General Name', 'text_domain' ),
+		'singular_name'         => _x( 'Filtro', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'             => __( 'Shop Filtros', 'text_domain' ),
+		'name_admin_bar'        => __( 'Shop Filtros', 'text_domain' ),
+    'archives'              => __( 'Item Archives', 'text_domain' ),
 		'attributes'            => __( 'Item Attributes', 'text_domain' ),
 		'parent_item_colon'     => __( 'Parent Item:', 'text_domain' ),
 		'all_items'             => __( 'All Items', 'text_domain' ),
@@ -32,10 +32,10 @@ function ablanadores_post() {
 		'filter_items_list'     => __( 'Filter items list', 'text_domain' ),
 	);
 	$args = array(
-		'label'                 => __( 'Ablanador', 'text_domain' ),
-		'description'           => __( 'Post Type for product', 'text_domain' ),
+		'label'                 => __( 'Filtro', 'text_domain' ),
+		'description'           => __( 'Post de Filtros', 'text_domain' ),
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'thumbnail' ),
+    'supports'              => array( 'title', 'editor', 'thumbnail' ),
 		'taxonomies'            => array( 'category', 'post_tag' ),
 		'hierarchical'          => false,
 		'public'                => true,
@@ -51,8 +51,8 @@ function ablanadores_post() {
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
 	);
-	register_post_type( 'ablanadores_post', $args );
+	register_post_type( 'filtros_post', $args );
 
 }
-add_action( 'init', 'ablanadores_post', 0 );
+add_action( 'init', 'custom_post_type', 0 );
  ?>
